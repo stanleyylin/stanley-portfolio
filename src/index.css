@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+    --foreground: theme("colors.foreground");
+    --background: theme("colors.background");
+    --primary: theme("colors.primary.foreground");
+    --primary-foreground: theme("colors.primary.foreground");
+    --primary-background: theme("colors.primary.background");
+    --secondary-foreground: theme("colors.secondary.foreground");
+    --muted-foreground: theme("colors.muted.foreground");
+    --accent: theme("colors.accent");
+    --border: 0 0% 91%;
+    --ring: 0 0% 75%;
+    --destructive: 3 92% 95%;
+    --destructive-foreground: 0 67% 42%;
+    --destructive-border: 359 74% 82%;
+    --warning: 53 100% 93%;
+    --warning-foreground: 43 81% 27%;
+    --warning-border: 42 51% 67%;
+    --success: 139 48% 91%;
+    --success-foreground: 153 67% 20%;
+    --success-border: 146 38% 69%;
+    --font-inter: Inter;
+    --font-playfair: Playfair Display;
+}
+
+html,
+body {
+    @apply m-0 min-h-full min-w-full overflow-x-hidden bg-background font-sans [&_*]:font-sans;
+}
