@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes, PropsWithChildren } from "react";
+import { FC, HTMLAttributes, PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 
 export type H1Props = PropsWithChildren &

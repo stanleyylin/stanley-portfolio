@@ -31,20 +31,24 @@ const config: Config = {
         transitionProperty: {
             "object-position": "object-position",
             transform: "transform",
+            all: "all",
         },
         transitionDuration: {
             "2000": "2000ms",
             "1000": "1000ms",
             "300": "300ms",
+            "800": "800ms",
         },
         dropShadow: {
             "text-light": "0px 0px 10px rgba(255, 255, 255, 0.5)",
             "text-bright": "0px 0px 5px rgba(255, 255, 255, 1)",
+            "text-soft": "0px 0px 10px rgba(255, 255, 255, 0.3)",
+            "text-softest": "0px 0px 10px rgba(255, 255, 255, 0.1)",
         },
         boxShadow: {
             none: "none",
-            "btn-light": "0px 0px 12px 4px rgba(0, 0, 0, 0.05)",
-            "btn-dark": "0px 0px 12px 4px rgba(255, 255, 255, 0.05)",
+            "btn-preglow": "0px 0px 12px 4px rgba(255, 255, 255, 0.1)",
+            "btn-glow": "0px 0px 12px 4px rgba(255, 255, 255, 0.2)",
             "btn-md-light": "0px 0px 12px 4px rgba(0, 0, 0, 0.20)",
             "btn-md-dark": "0px 0px 12px 4px rgba(255, 255, 255, 0.20)",
             "card-light": "0px 0px 12px 8px rgba(0, 0, 0, 0.05)",
@@ -62,12 +66,16 @@ const config: Config = {
                 background: "#161217",
             },
             secondary: {
-                foreground: "#F0F8A8",
+                foreground: "#F0F8A8", //green
+                background: "#142C22",
             },
             muted: {
                 foreground: "#DED8E1",
             },
-            accent: "#EBC9FF",
+            accent: {
+                foreground: "#EBC9FF",
+                background: "#1C181E",
+            },
             border: "hsl(var(--border))",
             ring: "hsl(var(--ring))",
             destructive: {
@@ -90,6 +98,9 @@ const config: Config = {
         fontFamily: {
             sans: ["var(--font-inter)", "sans-serif"],
             display: ["var(--font-playfair)", "sans-serif"],
+        },
+        transitionDelay: {
+            20: "20ms",
         },
         fontSize: {
             3: ["12px", "20px"],
@@ -135,8 +146,8 @@ const config: Config = {
             "2xs": "360px",
             xs: "480px",
             sm: "640px",
-            md: "768px",
-            lg: "840px",
+            md: "772px",
+            lg: "880px",
             xl: "1024px",
             "2xl": "1280px",
             "3xl": "1400px",
@@ -145,6 +156,12 @@ const config: Config = {
             "6xl": "1900px",
             "cover-video": {
                 raw: "((min-width: 1900px) or (min-height: 1050px))",
+            },
+            "md-xl": {
+                raw: "(min-width: 772px) and (max-width: 1024px)",
+            },
+            "sm-height": {
+                raw: "(max-height: 500px)",
             },
         },
         extend: {

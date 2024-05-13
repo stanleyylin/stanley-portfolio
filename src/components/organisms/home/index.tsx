@@ -1,16 +1,21 @@
-import { H1, HeroBanner, Projects } from "@/components";
-import React, { useEffect } from "react";
+import { Experiences, HeroBanner, Projects } from "@/components";
+import { useEffect } from "react";
 
 const Home = () => {
     useEffect(() => {
-        let root = document.documentElement;
-        root.style.setProperty("overflow", "scroll");
+        const root = document.documentElement;
+        root.style.setProperty("overflow", "hidden scroll");
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
 
     return (
         <div className="flex flex-col bg-background">
             <HeroBanner />
             <Projects />
+            <Experiences />
         </div>
     );
 };

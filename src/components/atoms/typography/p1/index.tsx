@@ -1,15 +1,20 @@
-import React, { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 
 type P1Props = PropsWithChildren & {
     selectable?: boolean;
     className?: string;
+    onClick?: (
+        event?: React.MouseEvent<HTMLParagraphElement, MouseEvent>,
+    ) => void;
 };
 
 const P1: FC<P1Props> = ({
     selectable = false,
     className,
     children,
+    onClick,
     ...props
 }) => (
     <p
@@ -18,6 +23,7 @@ const P1: FC<P1Props> = ({
             selectable && "select-text",
             className,
         )}
+        onClick={onClick}
         {...props}
     >
         {children}

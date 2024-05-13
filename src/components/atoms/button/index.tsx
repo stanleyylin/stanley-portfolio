@@ -1,7 +1,8 @@
-import React, { ButtonHTMLAttributes, FC } from "react";
-import { ButtonState } from "@/constants";
-import { twMerge } from "tailwind-merge";
 import { ButtonOutlineIcon } from "@/components";
+import { ButtonState } from "@/constants";
+import { ButtonHTMLAttributes, FC } from "react";
+import { twMerge } from "tailwind-merge";
+
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     state?: ButtonState;
     clamped?: boolean;
@@ -18,7 +19,7 @@ const Button: FC<ButtonProps> = ({
         <button
             {...props}
             className={twMerge(
-                `overflow-none break-word text-sm transition-colors relative flex max-w-xs items-center justify-center border-none bg-none px-4 py-3 font-medium shadow-none duration-300 ease-in-out`,
+                `overflow-none break-word text-sm transition-colors relative flex max-w-xs items-center justify-center border-none bg-none px-4 py-3 font-medium shadow-none duration-1000 ease-in-out hover:drop-shadow-text-bright`,
                 className,
             )}
             style={{ overflowWrap: "anywhere" }}
