@@ -90,6 +90,7 @@ const Landing = () => {
                         xy.y < 0 && xy.x === 0 && "object-top",
                         xy.y > 0 && xy.x === 0 && "object-bottom",
                     )}
+                    poster={EmberGroveIntroPoster}
                 >
                     <source src={EmberGroveIntro} type="video/mp4" />
                 </video>
