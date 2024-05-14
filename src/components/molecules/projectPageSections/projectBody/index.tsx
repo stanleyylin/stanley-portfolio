@@ -41,6 +41,7 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                             />
                         </div>
                     );
+                } else if (block.style === "video") {
                 }
             })}
         </>

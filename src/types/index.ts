@@ -31,11 +31,16 @@ export type TextBoxChildren = {
 
 export type TextBox =
     | {
-          style: "normal" | "h2" | "h3";
+          style: "normal" | "h2" | "h3" | "list";
           children: TextBoxChildren[];
       }
     | {
           style: "img";
+          alt: string;
+          src: string;
+      }
+    | {
+          style: "video";
           alt: string;
           src: string;
       };
