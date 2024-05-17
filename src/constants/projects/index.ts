@@ -1,3 +1,7 @@
+import DiagnosticSettings2 from "@/assets/diagnosticSettings/diagnosticSettings2.png";
+import DiagnosticSettings from "@/assets/diagnosticSettings/diagnosticSettings.png";
+import MediaGallery from "@/assets/mediaGallery/mediaGallery.png";
+import OverlayEditor from "@/assets/overlayEditor/overlayEditor.png";
 import DeepTrekkerHero from "@/assets/projects/project1hero.png";
 import DeepTrekkerHeroSquare from "@/assets/projects/project1heroSquare.png";
 import VisionaryHero from "@/assets/projects/project2hero.png";
@@ -6,6 +10,7 @@ import MapleDirectHero from "@/assets/projects/project3hero.png";
 import MapleDirectHeroSquare from "@/assets/projects/project3heroSquare.png";
 import MisoHero from "@/assets/projects/project4hero.png";
 import MisoHeroSquare from "@/assets/projects/project4heroSquare.png";
+import SoftwareUpdates from "@/assets/softwareUpdates/softwareUpdates.png";
 import { ProjectPageProps } from "@/types";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -84,6 +89,357 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "span",
                         styles: [],
                         content: "My Role",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "I joined as a web developer intern in January 2024 for my co-op. In a cross-functional team, I...",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Developed robust robot features: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "I championed the development of an overlay editor, media gallery, software updates, and diagnostics settings.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content:
+                                    "Led QA testing efforts and ensured controller performance quality: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "I fixed 30+ controller bugs and worked closely with the QA team to write unit tests and test cases with Zephyr.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Drove component-based development: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "I built reusable UI components with Storybook and used the DT design system with Tailwind.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Overlay Editor",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: OverlayEditor,
+                alt: "Overlay Editor",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "The Overlay Editor features text-based overlays that can be placed on the camera feed and captured for screen recordings. Funny enough, it was actually requested by a Norwegian fish farm company to label defects and issues with their infrastructure and fish netting. This feature was actually the deciding factor in whether they chose Deep Trekker's ROV or a competitor's product. And so, under a tight deadline, I took ownership of the full development of this feature, working closely with the product designer to ensure that I was delivering an intuitive, seamless-to-use feature. This process included: ",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Developing text overlay components, including a text alignment component, modals to delete and save overlays, and a text input component.",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Creating endpoints in the Express server to save and retrieve text overlays in the MySQL database via Prisma. This allows overlays to be saved across app sessions!",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Implementing a responsive draggable interface where overlays were anchored to a side of the page, and configuring the touch interactions so that users could single-tap to edit text and drag-hold to move the overlay.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Media Gallery",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: MediaGallery,
+                alt: "Media Gallery",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "The media gallery allows users to review images and videos recorded by the robot vehicle within the app. This media is stored on hard drives and disks and helps users review documented footage of their dives. This was one of the first major features I worked on, and my tasks included: ",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Remedying the slow image and video loading times.",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Implementing storage indicators and storage notification warnings.",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Adding missing icons and sorting the tabs for the hard drives/disk.",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "Developed a lightbox to view and zoom in/out on photos, and play videos.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "To speed up the media gallery loading speeds, I optimized useSWR to cache images/videos efficiently, implementing stale-while-revalidate to show cached media while fetching updates in the background. I also added lazy loading with placeholders, implemented infinite scroll for images and videos, and compressed videos/images on save.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "For the storage indicator, I followed the (very quirky) atomic design methodology to create individual components and stories in Storybook.  I designed the progress bar as an atom (a basic component), the percentage indicator as a molecule (a combination of atoms), and the media storage indicator as an organism (a more complex component). In the app, created a backend endpoint in the Express server to retrieve storage capacities for hard drives/disks. For storage notifications, I built a hook to check if storage capacity thresholds are reached.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Software Updates",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: SoftwareUpdates,
+                alt: "Software Updates",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "I implemented in-app software updates to update connected devices including cameras, camera heads, Sensor Pod, the vehicle itself, and the Bridge Box (control center). I was in charge of the backend development and integrations:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "I programmed the WebRTC provider to send update manifests from our AWS S3 to the Bridgebox which then updates the devices.",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "I built a hook to check and prompt updates automatically by fetching update manifests and comparing connected device versions.",
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "I integrated frontend components and developed a hook to communicate with the Bridgebox to display the various transferring, downloading, and updating steps, and to allow users to download and import offline update files.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Diagnostics Settings",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: DiagnosticSettings,
+                alt: "Diagnostic Settings",
+            },
+            {
+                style: "less-padding",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "I developed and integrated diagnostics for the vehicle, inputs (game controllers), WebRTC, and network at Deep Trekker. This included monitoring critical parameters such as power levels, sensor statuses, and system performance metrics to help users swiftly identify and resolve issues. For game controllers, I ensured users could verify connectivity and responsiveness. I also implemented WebRTC diagnostics to monitor video and audio communication quality, latency, and potential points of failure. Additionally, I created network diagnostic tools that monitored connectivity and health, allowing users to identify bottlenecks, disruptions, and optimize their network settings for better performance.",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: DiagnosticSettings2,
+                alt: "Diagnostic Settings 2",
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Conclusion",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "Working with the Deep Trekker team was an absolute joy; it was awesome joining lake days to test the Revolution ROV, spending time at the pool before feature releases, and leading web sprints with the team! Here were my key learnings:",
+                    },
+                ],
+            },
+            {
+                style: "ol",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Ask good questions: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Being in a cross-functional team allowed me to learn so much about all that goes into building an app. I grew so much as a developer by simply reaching out and asking questions when I needed it.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Take Initative and Perservere: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "I took on many new and unfamiliar tasks that allowed me to explore design systems, backend development, new frontend challenges (draggable components, notifications), and the world of robots.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Making work a place you love: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Deep Trekker was such a welcoming, warm place where I could chat with friends, play ping-pong, and have a blast at work outings. I had so much fun and I gained so much from connecting with others.",
+                            },
+                        ],
                     },
                 ],
             },
@@ -167,11 +523,6 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                     },
                 ],
             },
-            // {
-            //     style: 'img',
-            //     alt: 'Pethsapp home, community, and resources screens',
-            //     src:
-            // },
         ],
     },
     mapledirect: {

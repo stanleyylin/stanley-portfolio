@@ -12,7 +12,16 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 if (block.style === "normal") {
                     return (
                         <p
-                            className="mt-4 text-4 text-foreground xl:mt-5 xl:text-4.5"
+                            className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4"
+                            key={i}
+                        >
+                            <ProjectBodyChild blockChildren={block.children} />
+                        </p>
+                    );
+                } else if (block.style === "less-padding") {
+                    return (
+                        <p
+                            className="mt-0 !text-3.5 text-foreground xl:!text-4"
                             key={i}
                         >
                             <ProjectBodyChild blockChildren={block.children} />
@@ -21,11 +30,32 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 } else if (block.style === "h2") {
                     return (
                         <h2
-                            className="-mb-1 mt-8 font-display text-foreground text-7 font-bold first:mt-0 xl:mt-18 xl:text-9"
+                            className="-mb-1 mt-8 font-display text-foreground !text-6 font-bold first:mt-0 xl:mt-18 xl:!text-7"
                             key={i}
                         >
                             <ProjectBodyChild blockChildren={block.children} />
                         </h2>
+                    );
+                } else if (block.style === "h3") {
+                    return (
+                        <h2
+                            className="-mb-1 mt-8 font-display text-foreground !text-5 font-bold first:mt-0 xl:mt-18 xl:!text-6"
+                            key={i}
+                        >
+                            <ProjectBodyChild blockChildren={block.children} />
+                        </h2>
+                    );
+                } else if (block.style === "ul") {
+                    return (
+                        <ul className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4 list-disc list-outside px-10">
+                            <ProjectBodyChild blockChildren={block.children} />
+                        </ul>
+                    );
+                } else if (block.style === "ol") {
+                    return (
+                        <ol className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4 list-decimal list-outside px-10">
+                            <ProjectBodyChild blockChildren={block.children} />
+                        </ol>
                     );
                 } else if (block.style === "img") {
                     return (
@@ -37,7 +67,7 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                                 src={block.src}
                                 alt={block.alt}
                                 key={i}
-                                className="transition-transform duration-200 xl:group-hover:scale-[1.02]"
+                                className="transition-transform duration-300 xl:group-hover:scale-[1.02]"
                             />
                         </div>
                     );

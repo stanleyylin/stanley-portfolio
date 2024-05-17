@@ -38,6 +38,16 @@ const ProjectBodyChild: FC<ProjectBodyChildProps> = ({ blockChildren }) => {
                     {child.content}
                 </a>
             );
+        } else if (child.type === "li") {
+            return (
+                <li className={className} key={j}>
+                    {child.children ? (
+                        <ProjectBodyChild blockChildren={child.children} />
+                    ) : (
+                        child.content
+                    )}
+                </li>
+            );
         } else {
             return null;
         }

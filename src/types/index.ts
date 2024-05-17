@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import { ReactHTMLElement, ReactNode, SVGProps } from "react";
 import { type IconType } from "react-icons";
 
 export type LinkProps = {
@@ -23,15 +23,16 @@ export type ProjectCardProps = {
 };
 
 export type TextBoxChildren = {
-    type: "span" | "a";
+    type: "span" | "a" | "li";
     styles: string[];
     link?: string;
-    content: string;
+    content?: string;
+    children?: TextBoxChildren[];
 };
 
 export type TextBox =
     | {
-          style: "normal" | "h2" | "h3" | "list";
+          style: "normal" | "less-padding" | "h2" | "h3" | "ol" | "ul";
           children: TextBoxChildren[];
       }
     | {
