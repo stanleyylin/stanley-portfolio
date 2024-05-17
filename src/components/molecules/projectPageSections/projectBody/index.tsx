@@ -47,13 +47,13 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                     );
                 } else if (block.style === "ul") {
                     return (
-                        <ul className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4 list-disc list-outside px-10">
+                        <ul className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4 list-disc list-outside pl-10">
                             <ProjectBodyChild blockChildren={block.children} />
                         </ul>
                     );
                 } else if (block.style === "ol") {
                     return (
-                        <ol className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4 list-decimal list-outside px-10">
+                        <ol className="mt-4 !text-3.5 text-foreground xl:mt-5 xl:!text-4 list-decimal list-outside pl-10">
                             <ProjectBodyChild blockChildren={block.children} />
                         </ol>
                     );

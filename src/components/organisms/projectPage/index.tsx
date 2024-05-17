@@ -19,7 +19,7 @@ const ProjectPage = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div className="mx-auto my-8 pb-12 max-w-[1080px] px-10 sm:px-5 2xl:px-3">
+        <div className="mx-auto my-8 pb-12 max-w-[1080px] px-2 sm:px-5 2xl:px-3">
             <ProjectHero
                 title={title}
                 type={type}
