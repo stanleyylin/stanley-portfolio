@@ -1,4 +1,4 @@
-import { ReactHTMLElement, ReactNode, SVGProps } from "react";
+import { SVGProps } from "react";
 import { type IconType } from "react-icons";
 
 export type LinkProps = {
