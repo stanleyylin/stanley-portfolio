@@ -57,14 +57,22 @@ const NavBar = () => {
                         Stanley Lin
                     </H2>
                     <P1
-                        className="z-[100] !text-3.5"
+                        className="z-[100] !text-3.5 cursor-pointer"
                         onClick={() =>
                             goToHomePageAndScroll("experiences", 800)
                         }
                     >
                         Experiences
                     </P1>
-                    <P1 className="z-[100] !text-3.5">Contact</P1>
+                    <P1
+                        className="z-[100] !text-3.5 cursor-pointer"
+                        onClick={() => {
+                            goToHomePageAndScroll("footer", 800);
+                            setOpen(false);
+                        }}
+                    >
+                        Contact
+                    </P1>
                 </div>
             </div>
             <div className="border-b-[0.5px] bg-primary-background bg-opacity-15 border-b-foreground border-opacity-20 fixed top-0 z-50 sm:hidden h-14 w-screen items-center justify-between flex p-8 backdrop-blur-[3px]">
@@ -82,7 +90,7 @@ const NavBar = () => {
                 <div className=" fixed top-20 mt-2 rounded-2 z-50 w-[96vw] translate-x-[2vw] flex flex-col items-center justify-center py-4 sm:hidden">
                     <div className="absolute backdrop-blur-[1.5px] bg-primary-background bg-opacity-15 rounded-2 z-50 w-full h-full top-0 left-0" />
                     <P1
-                        className="h-9 flex items-center justify-center z-[100] cursor-pointer"
+                        className="h-9 flex items-center justify-center z-[100] !cursor-pointer"
                         onClick={() => {
                             navigate("/home");
                             setOpen(false);
@@ -91,7 +99,7 @@ const NavBar = () => {
                         Home
                     </P1>
                     <P1
-                        className="h-9 flex items-center justify-center z-[100] cursor-pointer"
+                        className="h-9 flex items-center justify-center z-[100] !cursor-pointer"
                         onClick={() => {
                             goToHomePageAndScroll("projects");
                             setOpen(false);
@@ -100,7 +108,7 @@ const NavBar = () => {
                         Projects
                     </P1>
                     <P1
-                        className="h-9 flex items-center justify-center z-[100] cursor-pointer"
+                        className="h-9 flex items-center justify-center z-[100] !cursor-pointer"
                         onClick={() => {
                             goToHomePageAndScroll("experiences", 800);
                             setOpen(false);
@@ -108,7 +116,13 @@ const NavBar = () => {
                     >
                         Experiences
                     </P1>
-                    <P1 className="h-9 flex items-center justify-center z-[100] cursor-pointer">
+                    <P1
+                        className="h-9 flex items-center justify-center z-[100] !cursor-pointer"
+                        onClick={() => {
+                            goToHomePageAndScroll("footer", 800);
+                            setOpen(false);
+                        }}
+                    >
                         Contact
                     </P1>
                 </div>

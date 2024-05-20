@@ -9,7 +9,10 @@ const Footer = () => {
     const navigate = useNavigate();
 
     return location.pathname !== "/" ? (
-        <footer className="flex container max-w-[1200px] border-t-border py-9 pb-14 lg:px-8 sm:px-12 xs:px-8 px-6 sm:flex-row gap-12 border-t flex-col sm:justify-between">
+        <footer
+            className="flex container max-w-[1200px] border-t-border py-9 pb-14 lg:px-8 sm:px-12 xs:px-8 px-6 sm:flex-row gap-12 border-t flex-col sm:justify-between"
+            id="footer"
+        >
             <div>
                 <H2>Stanley Lin</H2>
                 <P1 className="opacity-80">s38lin@uwaterloo.ca</P1>
