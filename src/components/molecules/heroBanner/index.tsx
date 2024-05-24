@@ -46,13 +46,11 @@ const HeroBanner = () => {
                             </span>
                         </P2>
                         <P2 className="sm:!text-5 xs:!text-4.5 !text-4">
-                            Currently, I am a software developer @{" "}
-                            <span className="text-accent">Deep Trekker</span> &
-                            a CS student at the{" "}
+                            I am a CS student at the{" "}
                             <span className="text-accent-foreground">
                                 University of Waterloo
-                            </span>
-                            !
+                            </span>{" "}
+                            and I'm looking for internships for Fall 2024!
                         </P2>
                     </div>
                     <img src={Stanley} className="h-56 mt-2 hidden md:flex" />
