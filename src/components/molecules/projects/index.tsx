@@ -1,4 +1,4 @@
-import EmberGroveHeader from "@/assets/ember-grove-header.jpeg";
+import EmberGroveHeader from "@/assets/ember-grove-header.webp";
 import { H2, ProjectCard } from "@/components";
 import { ProjectData } from "@/constants";
 

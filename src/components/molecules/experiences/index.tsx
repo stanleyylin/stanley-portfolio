@@ -1,4 +1,4 @@
-import EmberGroveHeader2 from "@/assets/ember-grove-header-2.jpeg";
+import EmberGroveHeader2 from "@/assets/ember-grove-header-2.webp";
 import { ExperienceCard, H2 } from "@/components";
 import { EXPERIENCES } from "@/constants";
 
