@@ -1,5 +1,5 @@
 import EmberGroveIntroGif from "@/assets/ember-grove-intro-gif.gif";
-import EmberGroveIntroPoster from "@/assets/ember-grove-intro-poster.png";
+import EmberGroveIntroPoster from "@/assets/ember-grove-intro-poster.webp";
 import EmberGroveIntro from "@/assets/ember-grove-intro.mp4";
 import { Button, H1, P1, P2, PointerBox } from "@/components";
 import { useEffect, useState } from "react";

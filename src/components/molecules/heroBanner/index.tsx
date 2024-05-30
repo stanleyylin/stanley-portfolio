@@ -1,5 +1,5 @@
 import EmberGroveSecondGif from "@/assets/ember-grove-second-gif.gif";
-import EmberGroveSecondPoster from "@/assets/ember-grove-second-poster.png";
+import EmberGroveSecondPoster from "@/assets/ember-grove-second-poster.webp";
 import EmberGroveSecond from "@/assets/ember-grove-second.mp4";
 import Stanley from "@/assets/stanley.png";
 import { H1, P2, StarIcon } from "@/components/atoms";
@@ -46,7 +46,7 @@ const HeroBanner = () => {
                             </span>
                         </P2>
                         <P2 className="sm:!text-5 xs:!text-4.5 !text-4">
-                            I am a CS student at the{" "}
+                            I'm a CS student at the{" "}
                             <span className="text-accent-foreground">
                                 University of Waterloo
                             </span>{" "}
