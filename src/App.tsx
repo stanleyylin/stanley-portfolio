@@ -6,7 +6,6 @@ import {
     NotFound,
     ProjectPage,
 } from "@/components";
-import { ScrollToTop } from "@/hooks";
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -16,7 +15,6 @@ function App() {
         <>
             <AnimatePresence>
                 <NavBar />
-
                 <Routes location={location} key={location.key}>
                     <Route index element={<Landing />} />
                     <Route path="/home" element={<Home />} />
