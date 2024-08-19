@@ -11,12 +11,23 @@ const NavBar = () => {
         selector: string,
         duration?: number,
     ) => {
-        await navigate("/home");
-        await scroller.scrollTo(selector, {
-            duration: duration ?? 600,
-            smooth: true,
-            spy: true,
-        });
+        if (location.pathname !== "/home") {
+            await navigate("/home");
+        }
+        setTimeout(
+            () =>
+                scroller.scrollTo(selector, {
+                    duration: duration ?? 600,
+                    smooth: true,
+                    spy: true,
+                }),
+            500,
+        );
+    };
+    const goToHome = async () => {
+        if (location.pathname !== "/home") {
+            await navigate("/home");
+        }
     };
 
     const goToLanding = async () => {
@@ -32,13 +43,16 @@ const NavBar = () => {
 
     return location.pathname !== "/" ? (
         <>
-            <div className="fixed top-0 z-50 sm:flex h-8 w-screen items-center justify-center hidden">
+            <div className="fixed top-0 z-40 sm:flex h-8 w-screen items-center justify-center hidden animate-fade-in">
                 <div className="relative flex xl:w-[75vw] max-w-[900px] lg:w-[80vw] md:w-[90vw] w-full items-center justify-between rounded-bl-4 rounded-br-4 md:px-24 px-12 pb-4 pt-12  transition-all duration-300">
                     <div className="absolute backdrop-blur-[1.5px] bg-primary-background bg-opacity-15  w-full h-full top-0 left-0 rounded-bl-4 rounded-br-4" />
 
                     <P1
                         className="z-[100] cursor-pointer !text-3.5"
-                        onClick={() => scroll.scrollToTop()}
+                        onClick={() => {
+                            goToHome();
+                            scroll.scrollToTop();
+                        }}
                     >
                         Home
                     </P1>

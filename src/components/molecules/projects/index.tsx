@@ -9,6 +9,7 @@ const Projects = () => {
                 <img
                     src={EmberGroveHeader}
                     className="absolute top-0 h-full w-[100vw] object-cover animate-moveTopToBottom"
+                    loading="lazy"
                 />
                 <div className="absolute top-0 left-0 h-44 z-10 w-[100vw] bg-background transition duration-300 opacity-0 hover:opacity-30 " />
                 <H2 className="z-10 uppercase text-primary md:!text-10 xs:!text-9 !text-8  drop-shadow-text-bright">

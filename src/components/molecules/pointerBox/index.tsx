@@ -6,18 +6,20 @@ export type PointerBoxProps = {
     xValue: number;
     yValue: number;
     className: string;
+    enable: boolean;
 };
 const PointerBox: FC<PointerBoxProps> = ({
     setTranslateXY,
     xValue,
     yValue,
     className,
+    enable,
 }) => {
     return (
         <div
             className={twMerge("absolute", className)}
             onPointerEnter={() => {
-                setTranslateXY({ x: xValue, y: yValue });
+                enable && setTranslateXY({ x: xValue, y: yValue });
             }}
             onPointerLeave={() => {
                 setTranslateXY({ x: 0, y: 0 });

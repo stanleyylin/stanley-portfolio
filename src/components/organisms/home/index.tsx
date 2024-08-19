@@ -3,12 +3,13 @@ import { useEffect } from "react";
 
 const Home = () => {
     useEffect(() => {
-        const root = document.documentElement;
-        root.style.setProperty("overflow", "hidden scroll");
-    }, []);
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
+        setTimeout(() => {
+            const root = document.documentElement;
+            root.style.setProperty("overflow", "hidden scroll");
+            document.body.removeEventListener("touchstart", function (e) {
+                e.preventDefault();
+            });
+        }, 2000);
     }, []);
 
     return (

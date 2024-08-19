@@ -27,6 +27,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             <img
                 src={image}
                 className="absolute inset-0 transition-transform duration-300 ease xl:group-hover:scale-105"
+                loading="lazy"
             />
             <div
                 className={twMerge(

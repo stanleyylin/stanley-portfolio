@@ -101,6 +101,7 @@ const config: Config = {
         },
         transitionDelay: {
             20: "20ms",
+            500: "500ms",
         },
         fontSize: {
             3: ["12px", "20px"],
@@ -169,6 +170,8 @@ const config: Config = {
                 "scale-in": "scale-in 0.2s ease",
                 "scale-out": "scale-out 0.2s ease",
                 "fade-in": "fade-in 200ms ease",
+                "slight-fade-in": "slight-fade-in 200ms ease",
+                "slight-fade-out": "slight-fade-out 200ms ease",
                 "fade-out": "fade-out 200ms ease",
                 glow: "glow 2000ms infinite ease-in-out",
                 moveTopToBottom: "moveTopToBottom 125s infinite",
@@ -212,6 +215,14 @@ const config: Config = {
                 },
                 "fade-in": {
                     from: { opacity: "0" },
+                    to: { opacity: "1" },
+                },
+                "slight-fade-in": {
+                    from: { opacity: "0.8" },
+                    to: { opacity: "1" },
+                },
+                "slight-fade-out": {
+                    from: { opacity: "0.8" },
                     to: { opacity: "1" },
                 },
                 glow: {
