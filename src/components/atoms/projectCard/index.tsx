@@ -6,13 +6,12 @@ import { twMerge } from "tailwind-merge";
 
 import { H2, P1 } from "../..";
 
-const ProjectCard: FC<ProjectCardProps & { position: number }> = ({
+const ProjectCard: FC<ProjectCardProps> = ({
     image,
     description,
     title,
     link,
     index,
-    position,
 }) => {
     const darkStart = index % 4 === 1 || index % 4 === 0;
     const navigate = useNavigate();
