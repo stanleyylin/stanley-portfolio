@@ -60,15 +60,10 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 } else if (block.style === "img") {
                     return (
                         <div
-                            className="group my-8 overflow-hidden border border-ring xl:my-12"
+                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300"
                             key={i}
                         >
-                            <img
-                                src={block.src}
-                                alt={block.alt}
-                                key={i}
-                                className="transition-transform duration-300 xl:group-hover:scale-[1.02]"
-                            />
+                            <img src={block.src} alt={block.alt} key={i} />
                         </div>
                     );
                 } else if (block.style === "video") {
