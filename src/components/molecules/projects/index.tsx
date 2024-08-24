@@ -28,11 +28,7 @@ const Projects = () => {
             <div className="flex w-full justify-center align-center">
                 <div className="max-w-[1200px] w-full sm:px-10 xs:px-5 px-3 mb-24 grid gap-6 md:mb-49 md:grid-cols-2">
                     {ProjectData.map((project, index) => (
-                        <ProjectCard
-                            {...project}
-                            position={index}
-                            key={index}
-                        />
+                        <ProjectCard {...project} key={index} />
                     ))}
                 </div>
             </div>
