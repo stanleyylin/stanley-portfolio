@@ -32,7 +32,6 @@ const HeroBanner = () => {
             <div
                 className={twMerge(
                     "absolute flex flex-col md:h-screen w-screen sm:h-[100vh] xs:h-[90vh] md:min-h-[700px] sm:min-h-[630px] xs:min-h-[530px] h-[630px] min-h-[480px] items-center justify-center opacity-0 transition-all duration-1000",
-                    imgLoaded && "opacity-100",
                 )}
             >
                 <motion.div
@@ -58,7 +57,6 @@ const HeroBanner = () => {
                             src={Stanley}
                             className="sm:h-56 h-50 mb-4 flex md:hidden"
                             loading="eager"
-                            onLoad={() => setImgLoaded(true)}
                         />
                     </motion.div>
                     <div className="flex flex-col w-[80vw] lg:pl-5 md:w-[40rem] md:pl-9 sm:pl-4 pl-0">
@@ -105,7 +103,6 @@ const HeroBanner = () => {
                         <img
                             src={Stanley}
                             className="h-56 mt-2 hidden md:flex"
-                            onLoad={() => setImgLoaded(true)}
                         />
                     </motion.div>
                 </div>
