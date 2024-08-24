@@ -31,7 +31,7 @@ const HeroBanner = () => {
             </video>
             <div
                 className={twMerge(
-                    "absolute flex flex-col md:h-screen w-screen sm:h-[100vh] xs:h-[90vh] md:min-h-[700px] sm:min-h-[630px] xs:min-h-[530px] h-[630px] min-h-[480px] items-center justify-center transition-all duration-1000",
+                    "absolute flex flex-col md:h-screen w-screen sm:h-[100vh] xs:h-[90vh] md:min-h-[700px] sm:min-h-[630px] xs:min-h-[530px] h-[630px] min-h-[480px] opacity-100 items-center justify-center",
                 )}
             >
                 <motion.div
@@ -45,17 +45,17 @@ const HeroBanner = () => {
                 </motion.div>
                 <div
                     className={twMerge(
-                        "flex flex-col md:flex-row w-screen justify-center items-center opacity-0 duration-1000 transition-all",
+                        "flex flex-col md:flex-row w-screen justify-center items-center ",
                     )}
                 >
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 0, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1.25 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
                     >
                         <img
                             src={Stanley}
-                            className="sm:h-56 h-50 mb-4 flex md:hidden"
+                            className="sm:h-56 h-50 l mb-4 flex md:hidden"
                         />
                     </motion.div>
                     <div className="flex flex-col w-[80vw] lg:pl-5 md:w-[40rem] md:pl-9 sm:pl-4 pl-0">
