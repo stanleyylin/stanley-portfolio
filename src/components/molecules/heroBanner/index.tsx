@@ -24,7 +24,7 @@ const HeroBanner = () => {
                 loop
                 muted
                 playsInline
-                className="absolute top-0 w-[100vw] sm-height:hidden object-cover object-center hidden xs:flex h-[115vh] md:min-h-[810px] min-h-[900px]"
+                className="absolute top-0 w-[100vw] sm-height:hidden object-cover object-center hidden xs:flex h-[115vh] md:min-h-[810px] min-h-[850px] sm:min-h-[900px]"
                 poster={EmberGroveSecondPoster}
             >
                 <source src={EmberGroveSecond} type="video/mp4" />
