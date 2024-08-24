@@ -37,7 +37,7 @@ const Landing = () => {
         >
             <div
                 className={twMerge(
-                    "z-50 select-none relative flex h-screen w-screen items-center justify-center overflow-hidden transition-transform duration-2000 delay-500",
+                    "z-50 select-none relative flex h-screen w-screen items-center justify-center overflow-clip transition-transform duration-2000 delay-500",
                     diving && "scale-110 animate-slight-fade-out",
                 )}
                 id="landing"
@@ -99,7 +99,7 @@ const Landing = () => {
                     enable={!diving}
                 />
 
-                <div className="absolute top-0 z-0 h-[100vh] w-[100vw] overflow-hidden">
+                <div className="absolute top-0 z-0 h-[100vh] w-[100vw] overflow-clip">
                     <video
                         autoPlay
                         loop

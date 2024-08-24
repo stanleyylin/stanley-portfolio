@@ -109,6 +109,7 @@ const HeroBanner = () => {
                         <img
                             src={Stanley}
                             className="h-56 mt-2 hidden md:flex"
+                            onLoad={() => setImgLoaded(true)}
                         />
                     </motion.div>
                 </div>

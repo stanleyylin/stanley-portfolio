@@ -1,23 +1,29 @@
 import { ProjectCardProps } from "@/types";
+import { motion } from "framer-motion";
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 import { H2, P1 } from "../..";
 
-const ProjectCard: FC<ProjectCardProps> = ({
+const ProjectCard: FC<ProjectCardProps & { position: number }> = ({
     image,
     description,
     title,
     link,
     index,
+    position,
 }) => {
     const darkStart = index % 4 === 1 || index % 4 === 0;
     const navigate = useNavigate();
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: position * 0.25 }}
             className={twMerge(
-                "border-foreground border-[1px] group relative aspect-[35/22] overflow-hidden rounded-4 bg-gradient-to-b  xs:rounded-[21px] lg:even:translate-y-10 md:rounded-[17px] xl:rounded-[21px] bg-background drop-shadow-text-softest hover:drop-shadow-text-soft cursor-pointer transition-all duration-300 ease",
+                "border-foreground border-[1px] group relative aspect-[35/22] overflow-hidden rounded-4 bg-gradient-to-b  xs:rounded-[21px] lg:even:!translate-y-10 md:rounded-[17px] xl:rounded-[21px] bg-background drop-shadow-text-softest hover:drop-shadow-text-soft cursor-pointer transition-all duration-300 ease",
                 darkStart
                     ? "from-[--accent-background] to-[--background]"
                     : " from-[--background] to-[--accent-background]",
@@ -53,7 +59,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                         : "top-0 from-[--secondary-background] to-transparent",
                 )}
             />
-        </div>
+        </motion.div>
     );
 };
 

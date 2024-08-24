@@ -39,11 +39,17 @@ const ProjectPage = () => {
                     mockups={mockups}
                 />
                 <div className="flex flex-col">
-                    <ProjectInfo
-                        tech={PROJECTS[slug ?? ""].technologies}
-                        skills={PROJECTS[slug ?? ""].skills}
-                        buttons={PROJECTS[slug ?? ""].buttons}
-                    />
+                    <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1 }}
+                    >
+                        <ProjectInfo
+                            tech={PROJECTS[slug ?? ""].technologies}
+                            skills={PROJECTS[slug ?? ""].skills}
+                            buttons={PROJECTS[slug ?? ""].buttons}
+                        />
+                    </motion.div>
                     <ProjectBody body={PROJECTS[slug ?? ""].content} />
                 </div>
             </div>
