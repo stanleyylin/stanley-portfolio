@@ -4,12 +4,9 @@ import EmberGroveSecond from "@/assets/ember-grove-second.mp4";
 import Stanley from "@/assets/stanley.png";
 import { H1, P2, StarIcon } from "@/components/atoms";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const HeroBanner = () => {
-    const [imgLoaded, setImgLoaded] = useState(false);
-
     return (
         <div className="relative xs:h-[115vh] h-[100vh] md:py-0 sm:py-15 py-10 md:min-h-[810px] sm:min-h-[900px] min-h-[850px] animate-slight-fade-in">
             <img
@@ -50,7 +47,6 @@ const HeroBanner = () => {
                 <div
                     className={twMerge(
                         "flex flex-col md:flex-row w-screen justify-center items-center opacity-0 duration-1000 transition-all",
-                        imgLoaded && "opacity-100",
                     )}
                 >
                     <motion.div
