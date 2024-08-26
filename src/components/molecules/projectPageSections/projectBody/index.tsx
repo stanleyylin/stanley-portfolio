@@ -60,7 +60,7 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 } else if (block.style === "img") {
                     return (
                         <div
-                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300"
+                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300 select-none"
                             key={i}
                         >
                             <img src={block.src} alt={block.alt} key={i} />
@@ -69,7 +69,7 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 } else if (block.style === "video") {
                     return (
                         <div
-                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300 "
+                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300 select-none"
                             key={i}
                         >
                             <video playsInline controls>

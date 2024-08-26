@@ -49,12 +49,12 @@ const ProjectHero: FC<ProjectHeroProps> = ({
                 <div className="relative bg-accent-background drop-shadow-text-softest aspect-square overflow-hidden border border-ring group sm:aspect-[1080/600]">
                     <img
                         src={mockups[0]}
-                        className="h-full object-cover z-10 transition-transform duration-300 xl:group-hover:scale-105 bg-no-repeat sm:block hidden"
+                        className="h-full object-cover z-10 transition-transform duration-300 xl:group-hover:scale-105 bg-no-repeat sm:block hidden select-none"
                         loading="lazy"
                     />
                     <img
                         src={mockups[1]}
-                        className="h-full object-cover z-10 transition-transform duration-300 xl:group-hover:scale-105 bg-no-repeat sm:hidden"
+                        className="h-full object-cover z-10 transition-transform duration-300 xl:group-hover:scale-105 bg-no-repeat sm:hidden select-none"
                         loading="lazy"
                     />
                     <div className="md:h-full h-[80%] -z-10 absolute w-full bg-gradient-to-b to-[--secondary-background] from-transparent opacity-60 group-hover:opacity-100 transition-all duration-800 ease bottom-0" />
