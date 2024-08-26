@@ -19,7 +19,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className={twMerge(
                 "border-foreground border-[1px] group relative aspect-[35/22] overflow-hidden rounded-4 bg-gradient-to-b  xs:rounded-[21px] lg:even:!translate-y-10 md:rounded-[17px] xl:rounded-[21px] bg-background drop-shadow-text-softest hover:drop-shadow-text-soft cursor-pointer transition-all duration-300 ease",
