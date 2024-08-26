@@ -41,7 +41,7 @@ export type TextBox =
           src: string;
       }
     | {
-          style: "video";
+          style: "video" | "youtube";
           alt: string;
           src: string;
       };

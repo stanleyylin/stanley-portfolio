@@ -67,6 +67,32 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                         </div>
                     );
                 } else if (block.style === "video") {
+                    return (
+                        <div
+                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300 "
+                            key={i}
+                        >
+                            <video playsInline controls>
+                                <source src={block.src} type="video/mp4" />
+                            </video>
+                        </div>
+                    );
+                } else if (block.style === "youtube") {
+                    return (
+                        <div
+                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300 flex relative h-0 pb-[60%] z-0 select-none"
+                            key={i}
+                        >
+                            <iframe
+                                src="https://www.youtube.com/embed/9MDUfkC-FLs?si=ab5dvFkXt2XHV77i"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                                className="absolute w-full h-full"
+                            ></iframe>
+                        </div>
+                    );
                 }
             })}
         </>

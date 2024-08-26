@@ -19,7 +19,7 @@ function App() {
                 cursor={<StarCursor />}
                 delay={1}
                 defaultCursorVisible={false}
-                breakpoint={997}
+                breakpoint={1100}
             >
                 <AnimatePresence>
                     <NavBar />

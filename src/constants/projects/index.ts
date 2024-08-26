@@ -1,6 +1,7 @@
 import DiagnosticSettings2 from "@/assets/diagnosticSettings/diagnosticSettings2.png";
 import DiagnosticSettings from "@/assets/diagnosticSettings/diagnosticSettings.png";
 import MediaGallery from "@/assets/mediaGallery/mediaGallery.png";
+import discordDemo from "@/assets/miso/discord demo.mov";
 import OverlayEditor from "@/assets/overlayEditor/overlayEditor.png";
 import DeepTrekkerHero from "@/assets/projects/project1hero.png";
 import DeepTrekkerHeroSquare from "@/assets/projects/project1heroSquare.png";
@@ -182,7 +183,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "span",
                         styles: [],
                         content:
-                            "The Overlay Editor features text-based overlays that can be placed on the camera feed and captured for screen recordings. Funny enough, it was actually requested by a Norwegian fish farm company to label defects and issues with their infrastructure and fish netting. This feature was actually the deciding factor in whether they chose Deep Trekker's ROV or a competitor's product. And so, under a tight deadline, I took ownership of the full development of this feature, working closely with the product designer to ensure that I was delivering an intuitive, seamless-to-use feature. This process included: ",
+                            "The Overlay Editor allows for text-based overlays to be placed on the camera feed to be captured during screen recordings. It was motivated by a Norwegian fish farm company to label infrastructure defects. This feature was their deciding factor in  choosing Deep Trekker's ROV over a competitor's product. And so, under a week turnaround, I took full ownership of this feature, working closely with the product designer to ensure that I was delivering an intuitive, seamless feature. This process included: ",
                     },
                 ],
             },
@@ -199,7 +200,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "li",
                         styles: [],
                         content:
-                            "Creating endpoints in the Express server to save and retrieve text overlays in the MySQL database via Prisma. This allows overlays to be saved across app sessions!",
+                            "Creating endpoints in the Express server to save and retrieve text overlays in the MySQL database via Prisma.",
                     },
                     {
                         type: "li",
@@ -231,7 +232,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "span",
                         styles: [],
                         content:
-                            "The media gallery allows users to review images and videos recorded by the robot vehicle within the app. This media is stored on hard drives and disks and helps users review documented footage of their dives. This was one of the first major features I worked on, and my tasks included: ",
+                            "The media gallery allows users to review images and videos recorded by the robot vehicle within the app. This media is stored on hard drives and disks and helps users review documented footage of their dives. My contributions included: ",
                     },
                 ],
             },
@@ -260,7 +261,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "li",
                         styles: [],
                         content:
-                            "Developed a lightbox to view and zoom in/out on photos, and play videos.",
+                            "Developing a lightbox to view and zoom in/out on photos, and play videos.",
                     },
                 ],
             },
@@ -282,7 +283,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "span",
                         styles: [],
                         content:
-                            "For the storage indicator, I followed the (very quirky) atomic design methodology to create individual components and stories in Storybook.  I designed the progress bar as an atom (a basic component), the percentage indicator as a molecule (a combination of atoms), and the media storage indicator as an organism (a more complex component). In the app, created a backend endpoint in the Express server to retrieve storage capacities for hard drives/disks. For storage notifications, I built a hook to check if storage capacity thresholds are reached.",
+                            "For the storage indicator, I followed an atomic design methodology to create the individual components in Storybook. In the app, created a backend endpoint in the Express server to retrieve storage capacities for hard drives/disks. For storage notifications, I built a hook to check if storage capacity thresholds are reached.",
                     },
                 ],
             },
@@ -383,7 +384,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "span",
                         styles: [],
                         content:
-                            "Working with the Deep Trekker team was an absolute joy; it was awesome joining lake days to test the Revolution ROV, spending time at the pool before feature releases, and leading web sprints with the team! Here were my key learnings:",
+                            "Working with the Deep Trekker team was awesome, from lake days to test the Revolution ROV, spending time at the pool before feature releases, to leading web sprints with the team. Here were my key learnings:",
                     },
                 ],
             },
@@ -397,13 +398,13 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                             {
                                 type: "span",
                                 styles: ["strong"],
-                                content: "Ask good questions: ",
+                                content: "Ask questions. ",
                             },
                             {
                                 type: "span",
                                 styles: [],
                                 content:
-                                    "Being in a cross-functional team allowed me to learn so much about all that goes into building an app. I grew so much as a developer by simply reaching out and asking questions when I needed it.",
+                                    "Being in a cross-functional team allowed me to learn beyond code development and gain exposure to other aspects of product development. I grew so much as a developer by asking questions to product design, QA, and engineering.",
                             },
                         ],
                     },
@@ -414,13 +415,13 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                             {
                                 type: "span",
                                 styles: ["strong"],
-                                content: "Take Initative and Perservere: ",
+                                content: "Every problem has a solution. ",
                             },
                             {
                                 type: "span",
                                 styles: [],
                                 content:
-                                    "I took on many new and unfamiliar tasks that allowed me to explore design systems, backend development, new frontend challenges (draggable components, notifications), and the world of robots.",
+                                    "I took on many new and unfamiliar tasks that allowed me to explore new design principles and systems. While some problems genuinely felt hopeless, finding a solution was always possible (and very satisfying).",
                             },
                         ],
                     },
@@ -431,7 +432,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                             {
                                 type: "span",
                                 styles: ["strong"],
-                                content: "Making work a place you love: ",
+                                content: "Work can be fun. ",
                             },
                             {
                                 type: "span",
@@ -508,7 +509,7 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                     {
                         type: "span",
                         styles: [],
-                        content: "My Role",
+                        content: "Background",
                     },
                 ],
             },
@@ -626,7 +627,170 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         type: "span",
                         styles: [],
                         content:
-                            "Miso is an AI bot that detects misogynistic and harmful comments made on messaging platforms!",
+                            "Miso is an AI bot that detects misogynistic and harmful comments made on messaging platforms, currently compatible with Discord. This was a project built for UofT Hacks 2023.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "The Idea",
+                    },
+                ],
+            },
+            {
+                style: "video",
+                src: discordDemo,
+                alt: "Discord Demo of Miso",
+            },
+            {
+                style: "less-padding",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "In professional communication spaces–especially Discord for new startups, Miso ensures that HR is informed of misogynistic and toxic behaviour from employees. It detects sexist and toxic messages using machine learning, and warns users prior to sending. Ultimately, we hope to reduce misogyny within tech communities so that women feel more empowered to work in STEM!",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content:
+                            "We made our own custom machine learning model on Cohere. ",
+                    },
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "We made a classify model which categorises text inputs into the labels True (misogynistic) and False (non-misogynistic). To train it, we combined various databases which took comments from social media sites, and organised them into 2 columns: message text and their associated label. In addition to our custom model, we also implemented the Cohere Toxicity Detection API into our program and checked messages against both models.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content:
+                            "Next, we developed a Discord Bot so that users can integrate this AI into their Discord Servers.",
+                    },
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            " We built it using Python, Discord API, and JSON. If someone sends a message which is determined to be 60% likely to be sexist or 80% likely to be toxic, then the bot would delete the message and send a warning text into the channel. To log the message history of the server, we used Estuary. Whenever a message would be sent in the discord, a new text file would be created and uploaded to Estuary to be backed up.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "The Landing",
+                    },
+                ],
+            },
+            {
+                style: "youtube",
+                src: "https://youtu.be/embed/9MDUfkC-FLs?si=VGBcIM_gkjdVM8GU",
+                alt: "Landing site Demo of Miso",
+            },
+            {
+                style: "less-padding",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "We also built a landing page for users to demo and download the bot. A future feature we wanted to illustrate was an employee record system which tracks every time a message is flagged as sexist or toxic for HR.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "We built a React frontend and with Cohere, we created an API endpoint in our model page using FastApi and created a server using Uvicorn. This allowed us to use the Fetch API to fetch the model’s prediction of the inputted sample message.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Takeaways",
+                    },
+                ],
+            },
+            {
+                style: "ol",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Working against time. ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "We had to use teamwork and resources to ensure we had a functioning, high-quality product in 3 days.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Learn by doing. ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "We used new technologies like Cohere for machine learning and Estuary for our database. Lots of new APIs but by attending hands-on workshops and just going at it, we learned so much.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Teamwork makes the dream work. ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Kelly, Lecia, and Pranav were the dream team 😎.",
+                            },
+                        ],
                     },
                 ],
             },
