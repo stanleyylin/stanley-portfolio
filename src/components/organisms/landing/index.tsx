@@ -190,6 +190,7 @@ const Landing = () => {
                                 }, 1000);
                             }}
                             className="z-[100]"
+                            style={{ cursor: "pointer" }}
                         >
                             <P1
                                 className="absolute mb-1 !uppercase drop-shadow-text-bright"
@@ -208,7 +209,7 @@ const Landing = () => {
 
                 <P2
                     className={twMerge(
-                        "absolute bottom-0 z-50 text-muted-foreground text-opacity-50 pb-4 !text-2 transition-all duration-1000",
+                        "absolute bottom-0 z-50 text-muted-foreground text-opacity-50 mb-4 !text-2 transition-all duration-1000",
                         diving && "opacity-0",
                     )}
                 >

@@ -28,6 +28,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                     : " from-[--background] to-[--accent-background]",
             )}
             onClick={() => navigate(link)}
+            style={{ cursor: "pointer" }}
         >
             <img
                 src={image}

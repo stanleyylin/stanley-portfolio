@@ -53,12 +53,14 @@ const NavBar = () => {
                             goToHome();
                             scroll.scrollToTop();
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Home
                     </P1>
                     <P1
                         className="z-[100] cursor-pointer !text-3.5"
                         onClick={() => goToHomePageAndScroll("projects")}
+                        style={{ cursor: "pointer" }}
                     >
                         Projects
                     </P1>
@@ -67,6 +69,7 @@ const NavBar = () => {
                         onClick={() => {
                             goToLanding();
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Stanley Lin
                     </H2>
@@ -75,6 +78,7 @@ const NavBar = () => {
                         onClick={() =>
                             goToHomePageAndScroll("experiences", 800)
                         }
+                        style={{ cursor: "pointer" }}
                     >
                         Experiences
                     </P1>
@@ -84,6 +88,7 @@ const NavBar = () => {
                             goToHomePageAndScroll("footer", 800);
                             setOpen(false);
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Contact
                     </P1>
@@ -98,7 +103,11 @@ const NavBar = () => {
                 >
                     Stanley Lin
                 </H2>
-                <MenuIcon open={open} onClick={() => setOpen(!open)} />
+                <MenuIcon
+                    open={open}
+                    onClick={() => setOpen(!open)}
+                    style={{ cursor: "pointer" }}
+                />
             </div>
             {open && (
                 <div className=" fixed top-20 mt-2 rounded-2 z-50 w-[96vw] translate-x-[2vw] flex flex-col items-center justify-center py-4 sm:hidden">
@@ -109,6 +118,7 @@ const NavBar = () => {
                             navigate("/home");
                             setOpen(false);
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Home
                     </P1>
@@ -118,6 +128,7 @@ const NavBar = () => {
                             goToHomePageAndScroll("projects");
                             setOpen(false);
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Projects
                     </P1>
@@ -127,6 +138,7 @@ const NavBar = () => {
                             goToHomePageAndScroll("experiences", 800);
                             setOpen(false);
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Experiences
                     </P1>
@@ -136,6 +148,7 @@ const NavBar = () => {
                             goToHomePageAndScroll("footer", 800);
                             setOpen(false);
                         }}
+                        style={{ cursor: "pointer" }}
                     >
                         Contact
                     </P1>

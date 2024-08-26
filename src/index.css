@@ -48,3 +48,12 @@ body {
         @apply mx-auto max-w-[1080px] px-5 sm:px-9 2xl:px-0;
     }
 }
+
+::-moz-selection {
+    /* Code for Firefox */
+    background: theme("colors.secondary.background");
+}
+
+::selection {
+    background: theme("colors.secondary.background");
+}

@@ -12,8 +12,12 @@ const ProjectInfo: FC<ProjectInfoProps> = ({ tech, skills, buttons }) => {
     return (
         <div className=" grid-cols-1 grid sm:grid-cols-3 sm:gap-4">
             <div className="lg:pb-0 pb-4">
-                <H2 className="text-5.5 xl:text-6 relative">Technologies</H2>
-                <P1>
+                <H2
+                    className="text-5.5 xl:text-6 relative select-text"
+                >
+                    Technologies
+                </H2>
+                <P1 className="select-text">
                     {tech.map((technology, index) => (
                         <span key={index} className="text-3.5 xl:text-4">
                             {technology}
@@ -23,8 +27,12 @@ const ProjectInfo: FC<ProjectInfoProps> = ({ tech, skills, buttons }) => {
                 </P1>
             </div>
             <div className="lg:pb-0 pb-6">
-                <H2 className="text-6 xl:text-5.5 relative">Skills</H2>
-                <P1>
+                <H2
+                    className="text-6 xl:text-5.5 relative select-text"
+                >
+                    Skills
+                </H2>
+                <P1 className="select-text">
                     {skills.map((skill, index) => (
                         <span key={index} className="text-3.5 xl:text-4">
                             {skill}
@@ -38,6 +46,7 @@ const ProjectInfo: FC<ProjectInfoProps> = ({ tech, skills, buttons }) => {
                     <button
                         key={id}
                         className="w-[80%] min-w-[180px] relative py-3 rounded-6 border-foreground border-[1px] shadow-btn-preglow hover:shadow-btn-glow cursor-pointer transition-all duration-300 ease pt-3"
+                        style={{ cursor: "pointer" }}
                     >
                         <a
                             href={href}

@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 type P1Props = PropsWithChildren & {
     selectable?: boolean;
     className?: string;
+    style?: React.CSSProperties;
     onClick?: (
         event?: React.MouseEvent<HTMLParagraphElement, MouseEvent>,
     ) => void;
@@ -15,6 +16,7 @@ const P1: FC<P1Props> = ({
     className,
     children,
     onClick,
+    style,
     ...props
 }) => (
     <p
@@ -24,6 +26,7 @@ const P1: FC<P1Props> = ({
             className,
         )}
         onClick={onClick}
+        style={style}
         {...props}
     >
         {children}

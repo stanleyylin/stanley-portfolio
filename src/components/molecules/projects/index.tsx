@@ -26,7 +26,7 @@ const Projects = () => {
             </motion.div>
 
             <div className="flex w-full justify-center align-center">
-                <div className="max-w-[1200px] w-full sm:px-10 xs:px-5 px-3 mb-24 grid gap-6 md:mb-49 md:grid-cols-2">
+                <div className="max-w-[1200px] w-full sm:px-10 xs:px-5 px-3 mb-24 grid gap-6 md:mb-49 md:grid-cols-2 select-none">
                     {ProjectData.map((project, index) => (
                         <ProjectCard {...project} key={index} />
                     ))}

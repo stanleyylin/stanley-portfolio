@@ -29,15 +29,7 @@ const Experiences = () => {
             </motion.div>
             <div className="w-full flex flex-col justify-center items-center">
                 {EXPERIENCES.map((experience, index) => (
-                    <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ duration: 0.5, delay: 0.25 }}
-                        key={index}
-                    >
-                        <ExperienceCard {...experience} />
-                    </motion.div>
+                    <ExperienceCard {...experience} key={index} />
                 ))}
             </div>
         </div>

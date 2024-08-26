@@ -13,6 +13,7 @@ const Button: FC<ButtonProps> = ({
     children,
     onClick,
     className = "",
+    style,
     ...props
 }) => {
     return (
@@ -22,7 +23,7 @@ const Button: FC<ButtonProps> = ({
                 `overflow-none break-word text-sm transition-colors relative flex max-w-xs items-center justify-center border-none bg-none px-4 py-3 font-medium shadow-none duration-1000 ease-in-out hover:drop-shadow-text-bright`,
                 className,
             )}
-            style={{ overflowWrap: "anywhere" }}
+            style={{ ...style, overflowWrap: "anywhere" }}
             disabled={state === ButtonState.Disabled}
             onClick={onClick}
         >

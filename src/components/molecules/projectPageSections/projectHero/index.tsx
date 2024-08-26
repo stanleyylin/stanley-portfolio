@@ -23,10 +23,12 @@ const ProjectHero: FC<ProjectHeroProps> = ({
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     <div className="flex-shrink-0">
-                        <H1 className="xl:text-16 lg:text-15 md:text-14 sm:text-13 xs:text-12 text-11">
+                        <H1 className="xl:text-16 lg:text-15 md:text-14 sm:text-13 xs:text-12 text-11 select-text">
                             {title}
                         </H1>
-                        <P1 className="!text-6 text-foreground">{type}</P1>
+                        <P1 className="!text-6 text-foreground select-text">
+                            {type}
+                        </P1>
                     </div>
                 </motion.div>
                 <motion.div
@@ -34,7 +36,7 @@ const ProjectHero: FC<ProjectHeroProps> = ({
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                    <P1 className="md:max-w-[380px] xl:text-5 lg:!text-4.5 md:!text-4 font-normal text-foreground md:mt-7 mt-4 xl:max-w-[550px] hidden sm:flex">
+                    <P1 className="md:max-w-[380px] xl:text-5 lg:!text-4.5 md:!text-4 font-normal text-foreground md:mt-7 mt-4 xl:max-w-[550px] hidden sm:flex select-text">
                         {description}
                     </P1>
                 </motion.div>
@@ -63,7 +65,7 @@ const ProjectHero: FC<ProjectHeroProps> = ({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
             >
-                <P1 className="font-normal text-foreground mt-8 flex sm:hidden">
+                <P1 className="font-normal text-foreground mt-8 flex sm:hidden select-text">
                     {description}
                 </P1>
             </motion.div>

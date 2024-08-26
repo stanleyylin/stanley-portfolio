@@ -4,12 +4,14 @@ import { twMerge } from "tailwind-merge";
 type MenuIconProps = {
     open: boolean;
     onClick: () => void;
+    style?: React.CSSProperties;
 };
-const MenuIcon: FC<MenuIconProps> = ({ open, onClick }) => {
+const MenuIcon: FC<MenuIconProps> = ({ open, onClick, style }) => {
     return (
         <div
             className="flex flex-col w-10 mt-1 cursor-pointer"
             onClick={onClick}
+            style={style}
         >
             <div
                 className={twMerge(

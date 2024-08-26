@@ -259,6 +259,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@cursorify/react@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/@cursorify/react/-/react-0.0.39.tgz#bf50ecaf7a74ed3e7582dc7a6faa512d6dcb0ae7"
+  integrity sha512-K4+Eb21hxypIb0KwU4qJS3STVBxO0x5iaYvWqW33ZZ8bpT8tpMIGgPFLyNrBbfkjARG9zncqCn0A5mGa+miTGA==
+
 "@dnd-kit/accessibility@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@dnd-kit/accessibility/-/accessibility-3.1.0.tgz#1054e19be276b5f1154ced7947fc0cb5d99192e0"

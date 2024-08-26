@@ -55,7 +55,7 @@ const HeroBanner = () => {
                     >
                         <img
                             src={Stanley}
-                            className="sm:h-56 h-50 l mb-4 flex md:hidden"
+                            className="sm:h-56 h-50 l mb-4 flex md:hidden select-none"
                         />
                     </motion.div>
                     <div className="flex flex-col w-[80vw] lg:pl-5 md:w-[40rem] md:pl-9 sm:pl-4 pl-0">
@@ -73,7 +73,7 @@ const HeroBanner = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.75 }}
                         >
-                            <P2 className="sm:!text-5 xs:!text-4.5 !text-4">
+                            <P2 className="sm:!text-5 xs:!text-4.5 !text-4 select-text">
                                 I create{" "}
                                 <span className="text-secondary-foreground">
                                     meaningful user experiences.
@@ -85,7 +85,7 @@ const HeroBanner = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 1 }}
                         >
-                            <P2 className="sm:!text-5 xs:!text-4.5 !text-4">
+                            <P2 className="sm:!text-5 xs:!text-4.5 !text-4 select-text">
                                 I'm a CS student at the{" "}
                                 <span className="text-accent-foreground">
                                     University of Waterloo
@@ -101,7 +101,7 @@ const HeroBanner = () => {
                     >
                         <img
                             src={Stanley}
-                            className="h-56 mt-2 hidden md:flex"
+                            className="h-56 mt-2 hidden md:flex select-none"
                         />
                     </motion.div>
                 </div>
