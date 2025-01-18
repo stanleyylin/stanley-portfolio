@@ -1,32 +1,49 @@
 import bldAI from "@/assets/experiences/bldAI.png";
 import deepTreeker from "@/assets/experiences/deepTrekker.png";
+import elbe from "@/assets/experiences/elbe.png";
+import hubspot from "@/assets/experiences/hubspot.png";
 import { ExperienceCardProps } from "@/components";
 
 export const EXPERIENCES: ExperienceCardProps[] = [
     {
+        image: hubspot,
+        title: "Hubspot",
+        role: "Software Engineer Intern",
+        date: "Incoming S25",
+        location: "Boston, US",
+        description: [],
+    },
+    {
+        image: elbe,
+        title: "Leo Berwick, elbe",
+        role: "Software Engineer Intern",
+        date: "September - December 2024",
+        location: "Toronto, CA",
+        description: [
+            "Built key dashboards and user-facing features for Elbe, an M&A due diligence platform streamlining deal evaluations, optimizing Q&A workflows, and automating reports with Next.js and Firebase.",
+            "Championed the redesign of deal and workstream dashboards with React/TypeScript, Recharts, and Figma, creating a robust design system and leveraging user feedback.",
+        ],
+    },
+    {
         image: deepTreeker,
         title: "Deep Trekker",
-        role: "Web Developer",
+        role: "Software Engineer Intern",
         date: "January - April 2024",
         location: "Waterloo, CA",
         description: [
-            "Engineered a controller web app for underwater robot models with React/TypeScript, Node, Express, and  MySQL.",
-            "Developed controller features for customers across 80+ countriess: a Media Gallery, an Overlay Editor for labeling objects in the camera, and Software Updates",
-            "Implemented diagnostics settings to monitor and troubleshoot system performance, resulting in an average 40% reduction in troubleshooting time for clients",
-            "Led QA testing efforts, resolving 30+ controller-vehicle bugs, such as issues with depth/altitude gauge, lasers, auto-stabilization, and media gallery which resulted in a 60% increase in image/video loading speeds",
+            "Developed a controller web app for underwater robot models with React/TypeScript, Node, Express, and  MySQL.",
+            "Built controller features for customers across 80+ countries: a Media Gallery, an Overlay Editor for labeling objects in the camera, a Diagnostic Settings dashboard, and Software Updates",
+            "Led QA testing efforts, resolving 30+ controller-vehicle bugs.",
         ],
     },
     {
         image: bldAI,
         title: "bld.ai",
-        role: "Software Engineer",
+        role: "Software Engineer Intern",
         date: "May - August 2023",
         location: "Florida, US",
         description: [
             "Built an e-commerce metrics platform with CI/CD that compiles and analyzes sales, ad, and customer data",
-            "Implemented over 10+ key pages, including login/registration, data modeling and visualizations, and various dashboard screens, using React.js, TypeScript, NextUI, and Styled Components",
-            "Integrated user authentication and business metrics using Python via Django and ChannelAdvisor API",
-            "Streamlined the landing website’s UI/UX and optimized load speeds by 40%, facilitating seamless onboarding for 20+ clients during the initial beta release",
         ],
     },
 ];
