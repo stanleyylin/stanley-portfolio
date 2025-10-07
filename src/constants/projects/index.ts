@@ -7,15 +7,961 @@ import DeepTrekkerHero from "@/assets/projects/project1hero.png";
 import DeepTrekkerHeroSquare from "@/assets/projects/project1heroSquare.png";
 import VisionaryHero from "@/assets/projects/project2hero.png";
 import VisionaryHeroSquare from "@/assets/projects/project2heroSquare.png";
-import MapleDirectHero from "@/assets/projects/project3hero.png";
-import MapleDirectHeroSquare from "@/assets/projects/project3heroSquare.png";
+import HubSpotHero from "@/assets/projects/project3hero.png";
+import HubSpotHeroSquare from "@/assets/projects/project3heroSquare.png";
 import MisoHero from "@/assets/projects/project4hero.png";
 import MisoHeroSquare from "@/assets/projects/project4heroSquare.png";
+import TagsInReportList from "@/assets/reportTagging/slide1.png";
+import SetTags from "@/assets/reportTagging/slide2.png";
+import BulkAction from "@/assets/reportTagging/slide3.png";
+import Filters from "@/assets/reportTagging/slide4.png";
+import TagManager from "@/assets/reportTagging/slide5.png";
+import Consideration1 from "@/assets/reportTagging/slide6.png";
+import Consideration2 from "@/assets/reportTagging/slide7.png";
 import SoftwareUpdates from "@/assets/softwareUpdates/softwareUpdates.png";
 import { ProjectPageProps } from "@/types";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const PROJECTS: Record<string, ProjectPageProps> = {
+    hubspot: {
+        id: "hubspot",
+        title: "HubSpot",
+        type: "Report Tagging Feature",
+        description:
+            "Organize and discover reports effortlessly with custom tags and smarter search.",
+        mockups: [HubSpotHero, HubSpotHeroSquare],
+        technologies: [
+            "React",
+            "Typescript",
+            "Redux",
+            "Java",
+            "DropWizard",
+            "Figma",
+        ],
+        skills: ["Full-stack web development", "Product Design"],
+        buttons: [
+            {
+                id: "hubspot-page",
+                title: "Blog Post",
+                href: "https://www.linkedin.com/posts/hubspot-tips-and-tricks_hubspot-revops-hubspottipsandtricks-activity-7363124240847388672-7WNH?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSFTQgB8D9sblOXm_jF36Sd36vSCkFxkfE",
+                Icon: FaExternalLinkAlt,
+            },
+        ],
+        content: [
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Background",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "HubSpot is a leading CRM platform that helps businesses connect marketing, sales, and customer data in one place. As an intern, I worked on improving how users organize and find their reports. I led the development of a tagging system that introduced flexible categorization and filtering, making it easier for teams to locate insights and collaborate efficiently.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "My Role",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "I joined HubSpot as a Software Engineer Intern in Summer 2025 on the Reporting Home team. In a cross-functional group of engineers, designers, and PMs, I championed the frontend, backend, and product design for the new tagging system. I...",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Led end-to-end feature development: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Built the full tagging experience in React with Redux and TypeScript, allowing users to create, edit, delete, and filter tags in reports.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Drove backend development: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Worked with the backend team to design, implement, and integrate Spring Boot endpoints for portal-level and bulk tag management, including CRUD operations and report-tag associations based on user filters.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Spearheaded product design and UX: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Designed the interaction flow and tag management interface in Figma, ensuring accessibility, scalability, and alignment with HubSpot’s design system.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Tags in Reports List",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: TagsInReportList,
+                alt: "Tags in Reports List",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "In the redesigned Reports List, fetching tags for each report at scale meant balancing performance with a smooth, intuitive experience.",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content:
+                                    "In Figma and on the frontend, I made the tag column effortless to use: ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "flexible across any number or length of tags, with a clean two-row layout, truncation for overflow, and hover states to reveal the rest. I added quick actions like “Set tags” and a three-dot menu for editing, so users could manage their tags without breaking their flow.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "On the engineering side, ",
+                            },
+                            {
+                                type: "span",
+                                styles: [""],
+                                content:
+                                    "I built the data layer with the Redux Ducks pattern to keep state management modular. Tags were fetched in bulk and cached client-side to cut down on redundant network calls, keeping the list fast even for portals with thousands of reports.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        content:
+                            "I worked with the backend team to redesign Spring Boot endpoints for reports that included tags within batched, paginated responses so tag data could load fast without blocking rendering.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Setting Tags",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: SetTags,
+                alt: "Seting Tags",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "To make tagging flexible, I added multiple entry points for setting report tags, including the Reports List, the action menu, and the Single Report Viewer (SRV). This made tagging feel native to wherever users already worked, which ",
+                    },
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "reduced friction and improved adoption.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "I designed a nice checklist editor that lets users add /remove multiple tags in one go, with overwrites existing tags. On the backend, I helped implement Spring Boot endpoints for bulk tag updates, edits, and deletions, optimized to handle thousands of reports!!",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Bulk Action",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: BulkAction,
+                alt: "Bulk Action",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "For bulk report tagging, users are able to...",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Manually select reports via checkboxes",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Select an entire page of reports",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "And even apply tags to all reports matching filters based on owner, dashboards the reports are on, last modified date, brands, and more.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "At first, the backend struggled to process these associations efficiently since each report-tag link triggered multiple writes. I optimized the workflow by batching updates on the frontend and collaborating with the backend team to switch to bulk database operations, which significantly sped up tag assignments.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "In a customer call, one user suggested adding an option to append tags instead of overwriting them, which I later recommended as a nice-to-have feature to give users more control when managing large sets of reports.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Filtering by Tags",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: Filters,
+                alt: "Filters",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "Filtering by tags is the crux of the entire feature. It gave users a powerful way to cut through hundreds or even thousands of reports to find exactly what they needed. I built a fast, searchable dropdown that supports multi-select filters and dynamically queries tag associations across a portal.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "On the backend, I worked with the team to optimize these requests for speed and scalability, ensuring filters remained responsive even under heavy load. This improvement directly contributed to a 35% faster report search time and made the Reports List a far more efficient workspace for data-heavy teams.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Tag Manager",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: TagManager,
+                alt: "Tag Manager",
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "The Tag Manager lets admins easily create, edit, and delete tags within a portal. I designed it to feel lightweight and intuitive, with hover-based edit and delete buttons for quick actions on each row, and a clear “Create Tag” button in the top right for adding new ones. The layout keeps everything visible and minimizes clicks, making tag management feel fast and predictable.",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "On the backend, separate endpoints were created to track tags per portal and handle permission-based access, ensuring that only portal admins could make edits. This structure made it easier to scale and maintain clean separation between tag data and report associations, while keeping the UI responsive and reliable.",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Design Considerations",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: Consideration1,
+                alt: "Design Consideration 1",
+            },
+            {
+                style: "h3-less-padding",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Custom Tag Colors",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Pros:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Gives users freedom to personalize and visually group tags.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Can improve quick recognition in data-heavy workspaces.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Feels more dynamic and modern for teams that value customization (no running out of colors!).",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Cons:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Harder to maintain visual consistency across HubSpot’s design system.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Increases cognitive load if colors overlap in meaning.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Requires color-contrast validation for accessibility.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "h3",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["less-padding"],
+                        content: "Design System Tag Colors",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Pros:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Fully accessible and already tested for contrast.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Consistent look and feel with the rest of HubSpot’s UI.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Easier to maintain, theme, and scale across products.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Cons:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Restrictive for teams that want more semantic color mapping.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Risk of users running out of distinct colors when managing many tags.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Went with the design system colors!",
+                    },
+                ],
+            },
+            {
+                style: "img",
+                src: Consideration2,
+                alt: "Design Consideration 2",
+            },
+            {
+                style: "h3-less-padding",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Modals",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Pros:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Fast to ship for MVPs.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Clear focus trap and keyboard support.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Good for complex forms and validation.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Consistent across breakpoints.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Cons:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Takes the user out of context & blocks the page behind it.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Can feel heavy if overused.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "h3",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["less-padding"],
+                        content: "Popovers",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Pros:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Lightweight and stays in context.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Great for quick edits and small forms.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Less visual disruption.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content: "Cons:",
+                    },
+                ],
+            },
+            {
+                style: "ul",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Tricky placement, scroll, and focus handling.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: [],
+                                content: "Tighter space for complex UIs.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: ["strong"],
+                        content:
+                            "Went with the modals for the MVP but will look towards incorporating some popovers in the future!",
+                    },
+                ],
+            },
+            {
+                style: "h2",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content: "Takeaways",
+                    },
+                ],
+            },
+            {
+                style: "normal",
+                children: [
+                    {
+                        type: "span",
+                        styles: [],
+                        content:
+                            "Working at HubSpot was awesome, and this was just one of my projects I was super proud of this term. Here were my key learnings:",
+                    },
+                ],
+            },
+            {
+                style: "ol",
+                children: [
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content:
+                                    "Cross-team collaboration was everything. ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "I worked closely with designers, PMs, backend engineers, and even joined customer calls to clarify how teams actually organize and retrieve reports. Those conversations shaped real design decisions, like when to use modals vs popovers, whether custom tag colors were worth the trade-offs, and other bugs I met along the way (like the overwriting vs appending tags, or the bulk action being slow).",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content: "Design clarity drives scalability. ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "Talking through color systems, accessibility, and tag behavior with stakeholders early on helped us avoid technical debt later. By grounding design choices in user research and product consistency, we built something that fit naturally into HubSpot’s ecosystem while staying flexible for future AI integrations.",
+                            },
+                        ],
+                    },
+                    {
+                        type: "li",
+                        styles: [],
+                        children: [
+                            {
+                                type: "span",
+                                styles: ["strong"],
+                                content:
+                                    "Engineering and planning go hand-in-hand. ",
+                            },
+                            {
+                                type: "span",
+                                styles: [],
+                                content:
+                                    "This project stretched across the full stack: from frontend interfaces & state management with React and Redux to backend APIs built in Java with Spring Boot and Dropwizard. Collaborating across teams to plan endpoints, define permissions, and optimize for performance taught me how thoughtful planning can turn a complex idea into a fast, reliable feature.",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
     deeptrekker: {
         id: "deeptrekker",
         title: "Deep Trekker",
@@ -521,54 +1467,6 @@ export const PROJECTS: Record<string, ProjectPageProps> = {
                         styles: [],
                         content:
                             "In a Hack the North 2023 team of 4, I worked on the frontend and the database/backend integration. Our app featured a landing page, a dashboard, and an eye-training game that allowed users to connect their Adhawk eye-tracking glasses!",
-                    },
-                ],
-            },
-        ],
-    },
-    mapledirect: {
-        id: "mapledirect",
-        title: "Maple Direct",
-        type: "E-commerce Metrics Platform",
-        description:
-            "A platform that compiles and analyzes sales, ad, and customer data for business executives.",
-        mockups: [MapleDirectHero, MapleDirectHeroSquare],
-        technologies: [
-            "React",
-            "Typescript",
-            "Styled Components",
-            "Django",
-            "AWS",
-            "Figma",
-        ],
-        skills: ["Full-stack web development", "Product Design"],
-        buttons: [
-            {
-                id: "landing-page",
-                title: "Landing Page",
-                href: "https://maple.direct/",
-                Icon: FaExternalLinkAlt,
-            },
-        ],
-        content: [
-            {
-                style: "h2",
-                children: [
-                    {
-                        type: "span",
-                        styles: [],
-                        content: "Background",
-                    },
-                ],
-            },
-            {
-                style: "normal",
-                children: [
-                    {
-                        type: "span",
-                        styles: [],
-                        content:
-                            "For my co-op at bld.ai, I designed and built the frontend of Maple Direct’s executive dashboard with React (Typescript, Styled Components, Jest) and Node.js. This dashboard uses Chart.js and ChannelAdvisors API to display various inventory, advertising, and customer metrics for e-commerce executives. During this project, I also gained exposure to Python Django for user authentication and AWS!",
                     },
                 ],
             },

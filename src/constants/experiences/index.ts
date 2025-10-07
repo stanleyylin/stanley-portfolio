@@ -9,9 +9,14 @@ export const EXPERIENCES: ExperienceCardProps[] = [
         image: hubspot,
         title: "Hubspot",
         role: "Software Engineer Intern",
-        date: "Incoming S25",
+        date: "May - August 2025",
         location: "Boston, US",
-        description: [],
+        description: [
+            "Spearheaded Report Tags from design to implementation using Figma, React, Redux, and Spring Boot, enabling AI-powered report discovery for 60K+ users and reducing search time by 35%.",
+            "Developed backend APIs in Java for single and bulk tagging/filtering, scaling to 15M+ requests/day with 99.9% uptime.",
+            "Launched advanced filtering in Typescript with GraphQL and Apollo for 120M+ reports, reducing query times by 25%.",
+            "Built an AI tool to auto-generate report templates, reducing setup time by 50%.",
+        ],
     },
     {
         image: elbe,
@@ -20,8 +25,8 @@ export const EXPERIENCES: ExperienceCardProps[] = [
         date: "September - December 2024",
         location: "Toronto, CA",
         description: [
-            "Built key dashboards and user-facing features for Elbe, an M&A due diligence platform streamlining deal evaluations, optimizing Q&A workflows, and automating reports with Next.js and Firebase.",
-            "Championed the redesign of deal and workstream dashboards with React/TypeScript, Recharts, and Figma, creating a robust design system and leveraging user feedback.",
+            "Deployed a distributed GPT-4 pipeline in Node.js/TypeScript, auto-tagging 20K+ financial documents per week and reducing analyst review time by 70%.",
+            "Redesigned and optimized M&A dashboards in Next.js and Firebase, reducing load times by 70% (5s →1.5s) and delivering real-time, intuitive visualizations for $5M+ deal pipelines.",
         ],
     },
     {
@@ -31,9 +36,9 @@ export const EXPERIENCES: ExperienceCardProps[] = [
         date: "January - April 2024",
         location: "Waterloo, CA",
         description: [
-            "Developed a controller web app for underwater robot models with React/TypeScript, Node, Express, and  MySQL.",
-            "Built controller features for customers across 80+ countries: a Media Gallery, an Overlay Editor for labeling objects in the camera, a Diagnostic Settings dashboard, and Software Updates",
-            "Led QA testing efforts, resolving 30+ controller-vehicle bugs.",
+            "Built real-time control systems in Electron, Node.js, and Express.js for underwater robots, cutting drift by 45% with auto-stabilization and improving video clarity by 30% with adaptive lighting.",
+            "Developed accessible features in React, TypeScript, Redux, and MySQL for customers in 80+ countries, including a media gallery, overlay editor, and AWS S3-based software updates.",
+            "Led development of a vehicle diagnostics bot to reduce vehicle troubleshooting time by 40% and boost fleet uptime from 90% → 96% across 2K+ robots worldwide.",
         ],
     },
     {
@@ -43,7 +48,8 @@ export const EXPERIENCES: ExperienceCardProps[] = [
         date: "May - August 2023",
         location: "Florida, US",
         description: [
-            "Built an e-commerce metrics platform with CI/CD that compiles and analyzes sales, ad, and customer data",
+            "Built an e-commerce metrics platform with React and Django to cut clients’ manual reporting by 50%.",
+            "Implemented authentication and reporting flows in Typescript and Python with full Jest test coverage, boosting onboarding and reporting speed by 25%.",
         ],
     },
 ];
