@@ -90,8 +90,8 @@ const HeroBanner = () => {
                                 <span className="text-accent-foreground">
                                     University of Waterloo
                                 </span>{" "}
-                                and I'm looking for internships for Fall/Winter
-                                2025!
+                                and I'm looking for internships for Summer/Fall
+                                2026!
                             </P2>
                         </motion.div>
                     </div>

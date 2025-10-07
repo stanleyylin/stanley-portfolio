@@ -39,7 +39,16 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 } else if (block.style === "h3") {
                     return (
                         <h2
-                            className="-mb-1 mt-8 font-display text-foreground !text-5 font-bold first:mt-0 xl:mt-18 xl:!text-6 select-text"
+                            className="-mb-1 mt-8 font-display text-foreground !text-5 font-bold first:mt-0 xl:mt-10 xl:!text-6 select-text"
+                            key={i}
+                        >
+                            <ProjectBodyChild blockChildren={block.children} />
+                        </h2>
+                    );
+                } else if (block.style == "h3-less-padding") {
+                    return (
+                        <h2
+                            className="-mb-1 mt-2 font-display text-foreground !text-5 font-bold xl:mt-4 xl:!text-6 select-text"
                             key={i}
                         >
                             <ProjectBodyChild blockChildren={block.children} />
@@ -60,7 +69,7 @@ const ProjectBody: FC<ProjectBodyProps> = ({ body }) => {
                 } else if (block.style === "img") {
                     return (
                         <div
-                            className="group my-8 overflow-hidden border border-ring xl:my-12 hover:-translate-y-2 transition-transform duration-300 select-none"
+                            className="group my-8 overflow-hidden border border-ring xl:my-10 xl:mb-8 hover:-translate-y-2 transition-transform duration-300 select-none"
                             key={i}
                         >
                             <img src={block.src} alt={block.alt} key={i} />
