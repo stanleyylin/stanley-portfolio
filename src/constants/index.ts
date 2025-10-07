@@ -1,6 +1,6 @@
 import DeepTrekker from "@/assets/projects/project1.png";
 import Visionary from "@/assets/projects/project2.png";
-import MapleDirect from "@/assets/projects/project3.png";
+import HubSpot from "@/assets/projects/project3.png";
 import Miso from "@/assets/projects/project4.png";
 import { ProjectCardProps } from "@/types";
 
@@ -14,11 +14,19 @@ export enum ButtonState {
 
 export const ProjectData: ProjectCardProps[] = [
     {
+        image: HubSpot,
+        title: "Report Tagging",
+        description: "Custom tags to find reports effortlessly.",
+        link: "/projects/hubspot",
+        index: 1,
+        projectType: "Co-op",
+    },
+    {
         image: DeepTrekker,
         title: "Deep Trekker",
         description: "Web controller for underwater robots.",
         link: "/projects/deeptrekker",
-        index: 1,
+        index: 2,
         projectType: "Co-op",
     },
     {
@@ -26,16 +34,8 @@ export const ProjectData: ProjectCardProps[] = [
         title: "Visionary",
         description: "An eye health app with pupil-tracking glasses.",
         link: "/projects/visionary",
-        index: 2,
-        projectType: "Hack the North Winner",
-    },
-    {
-        image: MapleDirect,
-        title: "Maple Direct",
-        description: "B2B ad & sales metrics platform.",
-        link: "/projects/mapledirect",
         index: 3,
-        projectType: "Co-op",
+        projectType: "Hack the North Winner",
     },
     {
         image: Miso,

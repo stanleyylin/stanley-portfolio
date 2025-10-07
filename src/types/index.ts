@@ -32,7 +32,14 @@ export type TextBoxChildren = {
 
 export type TextBox =
     | {
-          style: "normal" | "less-padding" | "h2" | "h3" | "ol" | "ul";
+          style:
+              | "normal"
+              | "less-padding"
+              | "h2"
+              | "h3"
+              | "ol"
+              | "ul"
+              | "h3-less-padding";
           children: TextBoxChildren[];
       }
     | {
